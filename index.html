@@ -82,7 +82,7 @@
             }
         }
         function showPosition(position) {
-            alertify.confirm("<h2 style='color:blue;'> ✨ Your current location is ✨ </h2><h3 style='color:blue;'>🧿 Latitude 🧿" + "</h3><h3 style='color:red;'>"+ position.coords.latitude  + "</h3><h3 style='color:blue;'>🧿 Longitude 🧿" + "</h3><h3 style='color:red;'>" + position.coords.longitude+ "</h3><a href="https://www.latlong.net/c/?lat="+ position.coords.latitude  + "&long=0.000000" target="_blank">Map View</a>",
+            alertify.confirm("<h2 style='color:blue;'> ✨ Your current location is ✨ </h2><h3 style='color:blue;'>🧿 Latitude 🧿" + "</h3><h3 style='color:red;'>"+ position.coords.latitude  + "</h3><h3 style='color:blue;'>🧿 Longitude 🧿" + "</h3><h3 style='color:red;'>" + position.coords.longitude+ "</h3><a href="https://www.latlong.net/c/?lat="+"position.coords.latitude"+"&long="+"position.coords.longitude" target="_blank">Map View</a>",
                 function () {
                     alertify.success('Location Data Shown Successfully');
                 },
